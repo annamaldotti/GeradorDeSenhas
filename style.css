@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap '  );
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
  
 :root{
     --branco: white;
@@ -103,8 +103,8 @@ margin-top: 80px;
     border-bottom: 2px solid var(--borda);
     margin: 0;
     font-size: 24px;
-
  }
+ 
 label {
     font-size: 20px;
 }
@@ -146,7 +146,6 @@ label {
     display: flex;
     justify-content: space-between;
 }
-
 
 @media screen and (min-width: 768px) {   
  .parametro-coluna__senha{       
