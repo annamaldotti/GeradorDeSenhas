@@ -89,7 +89,7 @@ margin-top: 80px;
     justify-content: center;
 }
 
-.parametro-senhas_botao{
+.parametro-senhas__botao{
     background-color: var(--fundo-texto);
     color: var(--branco);
     border: 2px solid var(--borda);
@@ -97,7 +97,7 @@ margin-top: 80px;
     font-size: 24px;
     cursor: pointer;
 }
- .parametro-senhas_texto{
+ .parametro-senhas__texto{
     padding: 24px;
     border-top: 2px solid var(--borda);
     border-bottom: 2px solid var(--borda);
