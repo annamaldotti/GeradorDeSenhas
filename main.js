@@ -13,7 +13,7 @@ function diminuiTamanho() {
         tamanhoSenha--;
     }
     numeroSenha.textContent = tamanhoSenha;
-    geradorSenha();
+    geraSenha();
 }
 function aumentaTamanho() {
     if (tamanhoSenha < 20) {
@@ -21,7 +21,7 @@ function aumentaTamanho() {
         tamanhoSenha++;
     }
     numeroSenha.textContent = tamanhoSenha;
-    geradorSenha();
+    geraSenha();
 }
 
 const campoSenha = document.querySelector('#campo-senha');
@@ -60,4 +60,16 @@ function geraSenha () {
         senha =  senha + alfabeto[numeroAleatorio];
     }
     campoSenha.value = senha;
+    classificaSenha();
+}
+
+function classificaSenha() {
+    forcaSenha.classlist.remove('fraca','media','forte');
+    if (tamanhoSenha > 11) {
+        forcaSenha.classilist.add('forte');
+    } else if (tamanhoSenha > 5 && tamanhoSenha < 12) {
+    forcaSenha.classilist.add('media');
+    }else if (tamanhoSenha <= 5) {
+    forcaSenha.classilist.add('fraca');
+    }
 }
