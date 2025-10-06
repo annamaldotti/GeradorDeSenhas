@@ -84,12 +84,12 @@ margin-top: 80px;
     margin: 0 auto;
 }
  
-.parametro-senhas-botoes{
+.parametro-senha-botoes{
     display: flex;
     justify-content: center;
 }
 
-.parametro-senhas__botao{
+.parametro-senha__botao{
     background-color: var(--fundo-texto);
     color: var(--branco);
     border: 2px solid var(--borda);
@@ -97,7 +97,7 @@ margin-top: 80px;
     font-size: 24px;
     cursor: pointer;
 }
- .parametro-senhas__texto{
+ .parametro-senha__texto{
     padding: 24px;
     border-top: 2px solid var(--borda);
     border-bottom: 2px solid var(--borda);
