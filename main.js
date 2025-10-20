@@ -42,9 +42,7 @@ function geraSenha () {
     let alfabeto = '';
     if (checkbox[0].checked) {
         alfabeto = alfabeto + letrasMaiusculas;
-    }                    
-    <input name="minusculo" type="checkbox" class="checkbox">
-
+    }                   
     if (checkbox[1].checked) {
         alfabeto = alfabeto + letrasMinusculas;
     }
