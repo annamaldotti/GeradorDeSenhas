@@ -42,7 +42,8 @@ function geraSenha () {
     let alfabeto = '';
     if (checkbox[0].checked) {
         alfabeto = alfabeto + letrasMaiusculas;
-    }                    <input name="minusculo" type="checkbox" class="checkbox">
+    }                    
+    <input name="minusculo" type="checkbox" class="checkbox">
 
     if (checkbox[1].checked) {
         alfabeto = alfabeto + letrasMinusculas;
@@ -75,6 +76,5 @@ function classificaSenha(tamanhoAlfabeto) {
     forcaSenha.classilist.add('fraca');
     }
     const valorEntropia = document.querySelector('entropia');
-    valorEntropia.textContent = "Um computador pode levar até" +
-    Math.floor(2**entropia/(100e6*60*60*24)) + "dias para descobrir essa senha.";
+    valorEntropia.textContent = "Um computador pode levar até" + Math.floor(2**entropia/(100e6*60*60*24)) + "dias para descobrir essa senha.";
 }
