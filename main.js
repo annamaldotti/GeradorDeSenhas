@@ -42,7 +42,8 @@ function geraSenha () {
     let alfabeto = '';
     if (checkbox[0].checked) {
         alfabeto = alfabeto + letrasMaiusculas;
-    }
+    }                    <input name="minusculo" type="checkbox" class="checkbox">
+
     if (checkbox[1].checked) {
         alfabeto = alfabeto + letrasMinusculas;
     }
@@ -60,12 +61,13 @@ function geraSenha () {
         senha =  senha + alfabeto[numeroAleatorio];
     }
     campoSenha.value = senha;
-    classificaSenha();
+    classificaSenha(alfabeto.length);
 }
 
-function classificaSenha() {
+function classificaSenha(tamanhoAlfabeto) {
+    let entropia = tamanhoSenha *Math.log2(tamanhoAlfabeto)
     forcaSenha.classlist.remove('fraca','media','forte');
-    if (tamanhoSenha > 11) {
+    if (entropia > ) {
         forcaSenha.classilist.add('forte');
     } else if (tamanhoSenha > 5 && tamanhoSenha < 12) {
     forcaSenha.classilist.add('media');
